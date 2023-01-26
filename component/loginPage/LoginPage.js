@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
+import './LoginPage.css';
 import inst_image from '../../images/9364675fb26a.svg';
 import inst_logo from '../../images/logoinsta.png'
+
 
 class LogInPage extends Component {
     constructor(props) {
@@ -16,7 +18,7 @@ class LogInPage extends Component {
                         Hello
                     </Grid>
                     <Grid item xs={6}>
-                        <div>
+                        <div className="loginpage_main">
                             <div>
                                 <img 
                                     src={inst_image}
@@ -28,7 +30,6 @@ class LogInPage extends Component {
                                 <img 
                                     src={inst_logo}
                                     alt=""
-                                    width="450"
                                     />
                             </div>
                         </div>
